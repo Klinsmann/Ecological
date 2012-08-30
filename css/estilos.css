@@ -1,0 +1,478 @@
+/********************RESETS*********************/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body, h1, h2, h3, h4, ul, li {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	text-decoration:none;
+	color: #fff;
+}
+
+.nf{
+	clear:both;
+}
+
+/*****************FUENTES****************/
+
+@font-face{  
+	font-family: 'AndikaRegular';
+    src: url('../fonts/andika-r-webfont.eot');
+    src: url('../fonts/andika-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/andika-r-webfont.woff') format('woff'),
+         url('../fonts/andika-r-webfont.ttf') format('truetype'),
+         url('../fonts/andika-r-webfont.svg#AndikaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CarterOneRegular';
+    src: url('../fonts/carterone-webfont.eot');
+    src: url('../fonts/carterone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/carterone-webfont.woff') format('woff'),
+         url('../fonts/carterone-webfont.ttf') format('truetype'),
+         url('../fonts/carterone-webfont.svg#CarterOneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/****************ESTILOS GENERALES***************/
+
+body{
+	background-color: #f9dea4;
+	font-size: 12px;
+	font-family: AndikaRegular;
+}
+
+section#bgheader{
+	background: #ffe8ae url(../images/bg-header.gif) repeat-x;
+}
+
+header{
+	margin: 0 auto;
+	width: 950px;
+	height: 106px;
+}
+	header h1 a{
+		background: url(../images/logo.jpg);
+		display: block;
+		float:left;
+		height: 104px;
+		overflow: hidden;
+		text-indent:-9999px;
+		width: 281px;
+	}
+
+nav{
+	float: left;
+	font-family: CarterOneRegular;
+	height:50px;
+	line-height: 50px;
+	margin-top: 27px;
+	margin-left: 55px;
+	width: 614px;
+	background: url(../images/bg-navigation.gif) repeat-x;
+}
+
+	nav ul{
+		height: 65px;
+		list-style: none;
+		width: 100%;
+		background: url(../images/bg-navigation-right-curve.gif) no-repeat;
+		background-position: 422px 0;
+	}
+
+	nav ul li{
+		background: url(../images/separator-navigation.gif) no-repeat;
+		float: left;
+	}
+
+		nav ul li.current{
+			background: none;
+		}
+
+
+	nav ul li a{
+		color: #B99B5F;
+		font-size: 1.1em;
+		height: 50px;
+		padding:0 30px;
+		text-align: center;
+		width: 110px;
+	}
+
+		nav ul li a:hover{
+			color:#2E5306;
+		}
+
+		nav ul li.active a{
+			color: #2E5306;
+		}
+
+
+section#bgsubheader{
+	background: url(../images/bg-headliner.gif);
+}
+
+	#wpsubheader{
+		background: url(../images/bg-headliner-top-shadow.jpg) no-repeat top center;
+		margin: 0 auto;
+		padding: 35px 0 0 0;
+		position: relative;
+		width: 950px;
+	}
+	#content{width: 950px;position:relative;margin:0 auto;padding-top:40px;
+		background: url(../images/bg-image-higlight.jpg) no-repeat 300px 0;
+	}
+
+/*********SECCION HOME*********/
+	#wpsubheader img{
+		border: 3px solid white;
+	}
+
+	#description{
+		float: left;
+		padding-right: 35px;
+		width: 286px;
+	}
+		#sombraimg{
+			background: url(../images/bg-headliner-image-shadow.jpg) no-repeat right bottom;
+			height: 13px;
+			margin-top: -6px;
+		}
+
+		#description h1{
+			color: #745B1B;
+			font-family: CarterOneRegular;
+			font-size: 2.9em;
+			text-shadow: 1px 1px 0 #FFF0D8;
+		}
+
+		#description p{
+			color: #826320;
+			font-size: 1.16em;
+			padding-bottom: 15px;
+			text-align: justify;
+			text-shadow:1px 1px 0 #F4DCB6;
+		}
+
+		#description p a{
+			color: #826320;
+			font-style: italic;
+			text-decoration: underline;
+		}
+
+		#tour, #register{
+			background: url(../images/sprites-buttons.gif) no-repeat;
+			background-position: 0px -304px;
+			color:#fff;
+			display: inline-block;
+			font-family: CarterOneRegular;
+			font-size: 1.3em;
+			height: 36px;
+			line-height: 37px;
+			padding-right: 5px;
+			text-align: center;
+			text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+			width: 136px;
+		}
+
+		#sombraimg{
+			background: url(../images/bg-headliner-image-shadow.jpg) no-repeat center;
+			float: right;
+			height: 13px;
+			margin-top: -5px;
+			width: 612px;
+		}
+
+		#sombrabgbt{
+			background: url(../images/bg-headliner-bottom-shadow.jpg) no-repeat center;
+			height: 37px;
+			width: 950px;
+		}
+
+section#bgGaleria{
+	background: url(../images/bg-featured.gif);
+}
+
+	#wpgaleria{
+		margin: 0 auto;
+		padding: 25px 0 0 0;
+		width: 950px;
+		
+	}
+
+	ul#galeria{
+		list-style: none;
+		width: 100%;
+	}
+
+		ul#galeria li{
+			display: inline-block;
+			margin-left: 49px;
+			padding: 10px 0 30px 0;
+			width: 281px;
+		}
+			ul#galeria li.first{margin-left: 0;}
+
+			ul#galeria li img{
+				border: 3px solid #fff;
+			}
+
+				ul#galeria li span{
+					background: url(../images/bg-featured.jpg) no-repeat right bottom;
+					display: block;
+					height: 15px;
+					margin-top: -6px;
+					width: 281px;
+				}
+
+	ul#galeria p{
+		color: #525252;
+		font-family: AndikaRegular;
+		font-size: 1.16em;
+		line-height: 21px;
+		margin-top: 15px;
+		padding-bottom: 6px;
+		text-align: left;
+		text-shadow:1px 1px 0 #E8E6E7;
+	}
+
+	ul#galeria a#btn{
+		background: url(../images/sprites-buttons.gif) no-repeat center;
+		background-position: 0 -160px;
+		color: #fff;
+		display: block;
+		font-family: CarterOneRegular;
+		font-size: 1.3em;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 20px;
+		text-align: center;
+		text-shadow: 1px 1px 0 #216B20;
+		width: 281px;
+
+	}
+
+/**********SECCION ABOUT**********/
+
+div#content img{
+	border: 3px solid #fff;
+	float: right;
+	margin-left: 40px;
+}
+	div#content span{
+		position: absolute;
+		display: block;
+		background: url(../images/bg-image-right-shadow.jpg)  no-repeat;
+		width: 201px;
+		height: 16px;
+		top: 352px;
+		left: 745px;
+	}
+	div#content p{
+		font-family: AndikaRegular;
+		font-size: 1.13em;
+		text-shadow:1px 1px 0 #F4DCB6;
+		color: #826320;
+		padding: 0 0 36px 0;
+	}
+		div#content p a{
+			text-decoration: underline;
+			font-style: italic;
+			color: #826320;
+		}
+	div#content strong{
+		color: #826320;
+		font-size: 1.13em;
+		line-height: 21px;
+		text-align: left;
+	}
+	
+/**********CONTACTO*********/
+
+div#contacto{
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+	div#contacto h2{
+		font-family: CarterOneRegular;
+		text-shadow:1px 1px 0 rgba(0,0,0,0.2);
+		color: #826320;
+		font-size: 1.9em;
+		padding: 15px 0 10px;
+	}
+	div#contacto p{
+		font-family: AndikaRegular;
+		font-size: 1.18em;
+		line-height: 20px;
+		text-shadow:1px 1px 0 #F4DCB6;
+		color: #826320;
+	}
+	div#contacto a{
+		text-decoration: underline;
+		font-style: italic;
+		color: #826320;
+	}
+form{
+	margin: 0 auto;
+	width: 825px;
+}
+
+table{
+   	border:none;
+   	margin-top: 30px;
+}
+	table td{
+		padding:10px 0;
+		border: none;
+		display: inline-block;
+	}
+	
+	table label{
+		font-family: AndikaRegular;
+		font-size: 1.16em;
+		text-shadow:1px 1px 0 #F4DCB6;
+		color: #826320;
+		font-weight: bold;
+		border: none;
+	}
+	
+	table input{
+		height: 36px;
+   		width: 268px;
+		background: url(../images/sprites-inputs.gif) no-repeat;
+		background-position: 0 -83px;
+		border: none;
+		color: #FFF;
+    	font-family: Arial;
+   		font-size: 12px;
+   		margin-left: 20px;
+	}
+	table textarea{
+		background: url(../images/text-area.jpg) no-repeat;
+		border: none;
+		vertical-align: top;
+	}
+
+section#bgfooter{
+	background: url(../images/bg-body.gif);
+}
+
+footer{
+	height: 600px;
+	margin: 0 auto;
+	width: 950px;
+}
+	footer .puntos{
+		float: left;
+		margin: 35px 0 0 45px;
+		width: 281px;
+	}
+
+		footer .first{margin-left: 0;}
+
+		footer h1{
+			color: #fff;
+			font-family: CarterOneRegular;
+			font-size: 1.7em;
+			padding-bottom: 10px;
+			text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+		}
+
+			footer h1 a{
+				background: url(../images/logo-footer.gif) no-repeat;
+				display: block;
+				overflow: hidden;
+				text-indent: -9999px;
+				width: 155px;
+			}
+
+	footer p{
+		color: #ddd;
+		font-family: AndikaRegular;
+		font-size: 1em;
+		line-height: 18px;
+		text-align: left;
+	}
+
+		footer p[class="contacto"]{
+			padding-top: 32px;
+		}
+
+		footer p+p{
+			font-size: 1.2em;
+			line-height: 24px;
+		}
+
+		footer p span{
+			color: #333;
+			font-style: oblique;
+		}
+
+	footer #btnsociales{
+		margin-top: 30px;
+	}
+
+		footer #btnsociales #fb{
+			background: url(../images/sprites-icon.gif) no-repeat;
+			background-position: 0 2px;
+			float: left;
+			height: 63px;
+			width: 63px;
+		}
+
+		footer #btnsociales #tw{
+			background: url(../images/sprites-icon.gif) no-repeat;
+			background-position: 0 -148px;
+			float: left;
+			height: 63px;
+			margin: 0 45px 0 45px;
+			width: 63px;
+		}
+
+		footer #btnsociales #lk{
+			background: url(../images/sprites-icon.gif) no-repeat;
+			background-position: 0 -72px;
+			float: left;
+			height: 63px;
+			width: 63px;
+		}
+
+		footer form{
+			margin-top: 28px;
+		}
+		 
+		footer input{
+			background: url(../images/sprites-inputs.gif) no-repeat;
+			background-position: 0 -122px;
+			border: none;
+			color: #fff;
+			height: 48px;
+			padding: 0 0 0 10px;
+			width: 160px;
+		}
+
+
+		footer #send{
+			background: url(../images/sprites-buttons.gif) no-repeat;
+			background-position: 0 -220px;
+			height: 29px;
+			margin-left: 6px;
+			width: 90px;
+		}
