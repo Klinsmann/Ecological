@@ -331,17 +331,26 @@ div#contacto{
 	}
 form{
 	margin: 0 auto;
-	width: 825px;
+	
 }
 
 table{
    	border:none;
    	margin-top: 30px;
 }
+	table tr{
+		padding-top: 25px;
+		display: block;
+	}
+
+
 	table td{
-		padding:10px 0;
-		border: none;
-		display: inline-block;
+		display: inline;
+	}
+
+	table td:nth-child(2){
+		margin-right: 90px;
+
 	}
 	
 	table label{
@@ -350,24 +359,28 @@ table{
 		text-shadow:1px 1px 0 #F4DCB6;
 		color: #826320;
 		font-weight: bold;
-		border: none;
+		padding:10px 5px 0 0;
 	}
 	
 	table input{
-		height: 36px;
+		height: 40px;
    		width: 268px;
 		background: url(../images/sprites-inputs.gif) no-repeat;
-		background-position: 0 -83px;
+		background-position: 0 -80px;
 		border: none;
 		color: #FFF;
     	font-family: Arial;
    		font-size: 12px;
    		margin-left: 20px;
+   		padding-left: 5px;
+
 	}
 	table textarea{
 		background: url(../images/text-area.jpg) no-repeat;
 		border: none;
 		vertical-align: top;
+		color: #FFF;
+		padding:3px 0 0 5px;
 	}
 
 section#bgfooter{
@@ -461,7 +474,7 @@ footer{
 		footer input{
 			background: url(../images/sprites-inputs.gif) no-repeat;
 			background-position: 0 -122px;
-			border: none;
+			border: 0;
 			color: #fff;
 			height: 48px;
 			padding: 0 0 0 10px;
@@ -472,7 +485,85 @@ footer{
 		footer #send{
 			background: url(../images/sprites-buttons.gif) no-repeat;
 			background-position: 0 -220px;
+			cursor: pointer;
 			height: 29px;
 			margin-left: 6px;
-			width: 90px;
+			vertical-align: middle;
+			width: 98px;
 		}
+	.suscribe{
+		margin-top: 30px;
+		margin-left: 80px;
+		padding-bottom: 100px;
+		color: #654e19;
+	}
+		.suscribe input[type="checkbox"]{
+			margin-right: 15px;
+			vertical-align: middle;
+		}
+		.suscribe label[for="check"]{
+			padding-right: 10px;
+		}
+		.suscribe input[type="submit"]{
+			background: url(../images/sprites-buttons.gif) 0px 83px;
+			border:0;
+			cursor: pointer;
+			height: 38px;
+			position: relative;
+			left: 210px;
+			vertical-align: middle;
+			width: 98px;
+		}
+			
+
+/****WHYCHOOSE****/
+
+#whychoose{
+
+	color: #917436;
+	font-family: AndikaRegular;
+	margin:0 auto;
+	text-shadow:0 0 1px rgba(0,0,0,0.4);
+	padding-top: 20px;
+	padding-bottom: 100px;
+	width: 950px;
+}
+	#whychoose h2{
+		font-family: CarterOneRegular;
+		color: #876922;
+	}
+	#bgsubheader p span{
+		width: 320px;
+		}
+		#bgsubheader p{
+			margin-top: 50px
+		}
+	#whychoose img{
+		border: 3px solid #fff;
+		float: right;
+		margin-left: 17px;
+	}
+/****BLOG****/
+
+#blog{
+	color: #917436;
+	font-family: AndikaRegular;
+	text-shadow:0 0 1px rgba(0,0,0,0.4);
+	margin: 0 auto;
+	width: 960px;
+}
+	#blog h2{
+		font-family: CarterOneRegular;
+		color: #876922;
+		padding-top: 10px;
+	}
+		#blog h2:hover{
+			color: #118837;
+			text-shadow:0 0 1px rgba(255,255,255,0.4);
+		}
+	#blog p{
+		padding-bottom: 20px;
+	}
+	#blog p:last-child{
+		padding-bottom: 100px;
+	}
